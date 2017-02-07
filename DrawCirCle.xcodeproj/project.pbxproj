@@ -14,6 +14,10 @@
 		B59133961BAAB0A400E86002 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59133951BAAB0A400E86002 /* Images.xcassets */; };
 		B59133991BAAB0A400E86002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B59133971BAAB0A400E86002 /* LaunchScreen.xib */; };
 		B59133A51BAAB0A400E86002 /* DrawCirCleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B59133A41BAAB0A400E86002 /* DrawCirCleTests.m */; };
+		B5B81CF41BABD989006F9C15 /* AnimationCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B81CF21BABD989006F9C15 /* AnimationCircleView.m */; };
+		B5B81CFA1BABDA71006F9C15 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B81CF91BABDA71006F9C15 /* DisplayView.m */; };
+		B5B81CFD1BABE20D006F9C15 /* DisplayLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B81CFC1BABE20D006F9C15 /* DisplayLabel.m */; };
+		B5B81D011BAC07C9006F9C15 /* 蒙版.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B81D001BAC07C9006F9C15 /* 蒙版.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		B591339E1BAAB0A400E86002 /* DrawCirCleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawCirCleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59133A31BAAB0A400E86002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B59133A41BAAB0A400E86002 /* DrawCirCleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawCirCleTests.m; sourceTree = "<group>"; };
+		B5B81CF11BABD989006F9C15 /* AnimationCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationCircleView.h; sourceTree = "<group>"; };
+		B5B81CF21BABD989006F9C15 /* AnimationCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationCircleView.m; sourceTree = "<group>"; };
+		B5B81CF81BABDA71006F9C15 /* DisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
+		B5B81CF91BABDA71006F9C15 /* DisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
+		B5B81CFB1BABE20D006F9C15 /* DisplayLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLabel.h; sourceTree = "<group>"; };
+		B5B81CFC1BABE20D006F9C15 /* DisplayLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLabel.m; sourceTree = "<group>"; };
+		B5B81D001BAC07C9006F9C15 /* 蒙版.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "蒙版.png"; path = "CircleViewDisplay/蒙版.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +96,10 @@
 				B591338D1BAAB0A400E86002 /* AppDelegate.m */,
 				B591338F1BAAB0A400E86002 /* ViewController.h */,
 				B59133901BAAB0A400E86002 /* ViewController.m */,
+				B5B81CEE1BABD989006F9C15 /* CircleViewDisplay */,
 				B59133921BAAB0A400E86002 /* Main.storyboard */,
 				B59133951BAAB0A400E86002 /* Images.xcassets */,
+				B5B81D001BAC07C9006F9C15 /* 蒙版.png */,
 				B59133971BAAB0A400E86002 /* LaunchScreen.xib */,
 				B59133881BAAB0A400E86002 /* Supporting Files */,
 			);
@@ -117,6 +130,19 @@
 				B59133A31BAAB0A400E86002 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5B81CEE1BABD989006F9C15 /* CircleViewDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				B5B81CF11BABD989006F9C15 /* AnimationCircleView.h */,
+				B5B81CF21BABD989006F9C15 /* AnimationCircleView.m */,
+				B5B81CFB1BABE20D006F9C15 /* DisplayLabel.h */,
+				B5B81CFC1BABE20D006F9C15 /* DisplayLabel.m */,
+				B5B81CF81BABDA71006F9C15 /* DisplayView.h */,
+				B5B81CF91BABDA71006F9C15 /* DisplayView.m */,
+			);
+			path = CircleViewDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +227,7 @@
 			files = (
 				B59133941BAAB0A400E86002 /* Main.storyboard in Resources */,
 				B59133991BAAB0A400E86002 /* LaunchScreen.xib in Resources */,
+				B5B81D011BAC07C9006F9C15 /* 蒙版.png in Resources */,
 				B59133961BAAB0A400E86002 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59133911BAAB0A400E86002 /* ViewController.m in Sources */,
+				B5B81CFA1BABDA71006F9C15 /* DisplayView.m in Sources */,
+				B5B81CF41BABD989006F9C15 /* AnimationCircleView.m in Sources */,
 				B591338E1BAAB0A400E86002 /* AppDelegate.m in Sources */,
 				B591338B1BAAB0A400E86002 /* main.m in Sources */,
+				B5B81CFD1BABE20D006F9C15 /* DisplayLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +448,7 @@
 				B59133AA1BAAB0A400E86002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B59133AB1BAAB0A400E86002 /* Build configuration list for PBXNativeTarget "DrawCirCleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +457,7 @@
 				B59133AD1BAAB0A400E86002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

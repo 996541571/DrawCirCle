@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)decrease:(UIButton *)sender;
+- (IBAction)increase:(UIButton *)sender;
 
 @end
 
